@@ -89,6 +89,12 @@ body {
   background: #ff3366;
 }
 
+#login-status {
+  margin-top: 10px;
+  color: #ff0055;
+  font-size: 0.9em;
+}
+
 @keyframes matrix {
   0% { background-position: 0 0; }
   100% { background-position: 0 100%; }
