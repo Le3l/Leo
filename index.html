@@ -58,15 +58,34 @@
       }
     }
 
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.8em;
-      color: #444;
-    }
-  </style>
-</head>
-<body>
+      .footer {
+        position: absolute;
+        bottom: 20px;
+        font-size: 0.8em;
+        color: #444;
+      }
+
+      .login-link {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: #ff0066;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 0 10px #ff0066;
+        transition: background 0.3s;
+      }
+
+      .login-link:hover {
+        background: rgba(255, 0, 102, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="html/login.html" class="login-link">Login</a>
   <h1>⚡ We Are Coming Stronger ⚡</h1>
   <p>Behind the silence... something powerful is being built.</p>
   <div class="terminal">
