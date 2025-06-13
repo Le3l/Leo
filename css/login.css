@@ -1,9 +1,9 @@
-
+ 
 * {
   box-sizing: border-box;
 }
 
-
+ 
 body {
   background: #0d0d0d;
   font-family: 'Courier New', Courier, monospace;
@@ -21,9 +21,12 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 15px #ff0055, 0 0 30px #00ff88;
   width: 320px;
+ 
+  max-width: 90%;
+ 
 
   max-width: 90%;
-
+ 
   text-align: center;
 }
 
@@ -105,7 +108,7 @@ body::before {
   pointer-events: none;
 }
 
-
+ 
 @media (max-width: 480px) {
   body {
     height: auto;
@@ -121,4 +124,4 @@ body::before {
     font-size: 1.6em;
   }
 }
-
+ 
