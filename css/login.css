@@ -1,0 +1,97 @@
+body {
+  background: #0d0d0d;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #00ff88;
+}
+
+.login-container {
+  background: rgba(20, 20, 20, 0.95);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #ff0055, 0 0 30px #00ff88;
+  width: 320px;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #ff0055;
+  text-shadow: 0 0 8px #ff0055;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #111;
+  color: #eee;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88;
+}
+
+.toggle-pass {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #ff0055;
+  cursor: pointer;
+}
+
+.options {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #ff0055;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #ff3366;
+}
+
+@keyframes matrix {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/matrix.png');
+  opacity: 0.05;
+  background-size: cover;
+  animation: matrix 10s linear infinite;
+  pointer-events: none;
+}
